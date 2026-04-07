@@ -1,0 +1,293 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+body{
+    margin: auto auto;
+}
+
+.lato-regular, p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic, h3, a {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.lato-bold-italic, h1, h2, h4, form {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.menu{
+    background-image: url("images/hero-background.jpg");
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#menu-style{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    justify-content: start;
+    padding-top: 2vh;
+    padding-left: 5%;
+    text-decoration: none;
+    transition: all 0.3s;
+    flex-wrap: no-wrap;
+    white-space: nowrap; /*el elemento no se adapta al tamaño de la pantalla */
+    flex-shrink: 0; /* evita que se encojan */
+    
+}
+
+#menu-style a:hover{
+    transform: scale(1.1);
+    background-color: white;
+    
+}
+
+#menu-style a:active{
+    transform: scale(1.0);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: #fdf0d5;
+    padding: 0.8%;
+    border-radius: 20px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+    
+   
+    
+}
+
+
+
+#h1-hero{
+    background-color: #780000;
+    color: beige;
+    padding: 7px 10px;
+    margin: 0px auto;
+    border-radius: 10px;
+       
+}
+
+#p-hero{
+    background-color: #fdf0d5;
+    padding: 8px 8px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.second-header{
+    text-align: center;
+    background-color: #cdd6bc;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    
+    
+}
+.all-activities{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    background-color: #cdd6bc;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+
+.activity-123{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 200px;
+   
+}
+
+.highlight{
+    display: inline-block;
+    background-color: #fdf0d5;
+    border-radius: 20px;
+    padding: 3px 10%;
+
+}
+
+.activity-imgs{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s;
+
+}
+
+.activity-imgs:hover{
+    transform: scale(1.2);
+}
+    
+.foto-guia{
+    width: 150px;
+    height: 240px;
+    object-fit: cover;
+    object-position: 68%;
+    border-radius: 15px;
+    padding-left: 30px;
+}
+
+.foto-chofer{
+    width: 150px;
+    height: 240px;
+    object-fit: cover;
+    object-position: 78%;
+    border-radius: 15px;
+    padding-left: 30px;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 18px; 
+    border-bottom: 6px solid #780000;
+    background-color: #669bbc;
+    transition: 0.5s;
+    flex: 0 0 400px;
+    
+}
+
+.card-section:hover{
+    transform: scale(1.05);
+}
+
+.card-section-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 18px; 
+    border-bottom: 6px solid #780000;
+    background-color: #fdf0d5;
+    transition: 0.5s;
+    flex: 0 0 400px;
+    
+}
+
+.card-section-2:hover{
+    transform: scale(1.05);
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    padding: 0% 4%;
+    flex-wrap: wrap;
+}
+
+.cta-father{
+    display: flex;
+    flex-direction: row;
+
+    background-color: aliceblue;
+    gap: 10%;
+    padding: 5%;
+    
+}
+
+.cta-header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+   
+}
+
+.guia-mujer{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #780000;
+    transition: 0.3s;
+    
+}
+
+.guia-mujer:hover{
+    transform: scale(1.05);
+}
+
+#guia-mujer-avatar{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: -100px 20px;
+  transform: scale(1.4);
+  
+}
+
+.formulario{
+   flex:1;
+   display: flex;
+   flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* espacio entre cada label e input */
+    border-radius: 20px;
+    
+}
+
+input, textarea, button {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 10px; /* bordes redondos */
+}
+
+
+
+
